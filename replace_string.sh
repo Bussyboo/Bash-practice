@@ -18,7 +18,7 @@ if [ ! -f "$FILE" ]; then
 fi
 
 # Use sed to find and replace the string in the file
-sed -i "s/$FIND_STRING/$REPLACE_STRING/g" "$FILE"
+sed -i '' "s/${FIND_STRING}/${REPLACE_STRING}/g" "$FILE"
 
 # Inform the user that the replacement is complete
 echo "Replaced all occurrences of '$FIND_STRING' with '$REPLACE_STRING' in $FILE."
